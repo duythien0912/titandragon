@@ -1,0 +1,58 @@
+
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+    h1 span {
+    color: red;
+}
+body {
+    text-align: center;
+    margin: auto;
+    height: 50vh;
+    width: 50vw;
+}
+.done {
+    text-decoration: line-through;
+    color: #666666;
+    border-bottom: none !important;
+}
+.list li{
+    list-style-type: circle !important;
+}
+.list li {
+    font-size: 14px;
+    width: 100%;
+    text-align: start;
+    padding: 0.3em;
+}
+.list>li:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+li span {
+    float: right;
+    color: red;
+    transition: all 0.3s;
+    opacity: 0;
+}
+.list>li:hover span{
+    opacity: 1;
+}
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    .list li {
+    font-size: 24px;
+}
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
